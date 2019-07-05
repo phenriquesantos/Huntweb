@@ -12,8 +12,11 @@ export class ApiService {
 
   constructor( private http: HttpClient ) { }
 
-  listar(page = 1){
+  getAll(page: number){
     return this.http.get(`${this.apiUrl}/products?page=${page}`);
   }
 
+  getProduct(id: string){
+    return this.http.get(`${this.apiUrl}/products/${id}`);
+  }
 }

@@ -10,3 +10,13 @@ header#main-header {
     align-items    : center;
     text-transform : uppercase;
 }
+
+#main-header a{
+    color: white;
+    text-decoration: none;
+}
+
+#main-header a:hover{
+    color: white;
+    text-decoration: none;
+}
